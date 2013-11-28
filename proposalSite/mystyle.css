@@ -1,0 +1,182 @@
+backdiv {
+  border: 0px solid #000000;
+
+}
+
+* {
+  box-sizing:  border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #C5C5C5;
+}
+#content{
+  
+}
+#headSpace{
+  position: static;
+  min-height: 80px;
+  
+}
+#header{
+  min-height: 80px;
+  width: 100%;
+  min-width: 400px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  z-index: 999;
+  box-shadow: 0px 1px 8px #461F44;
+}
+
+#header img{
+}
+
+
+
+#navigation{
+  position: absolute;
+  right:5%;
+  bottom:10px;
+}
+
+#navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+}
+
+#navigation ul li {
+  display: inline;
+}
+
+#navigation ul li a{
+  margin-left: 15px;
+  display: block;
+  float: left;
+  height: 25px;
+  text-indent: -999em;
+}
+
+#navigation li#services a{
+  width: 92px;
+  background:  url(services.png);
+}
+
+#navigation li#people a{
+  width: 73px;
+  background:  url(people.png);
+}
+
+#navigation li#contact a{
+  width: 101px;
+  background:  url(contact-us.png);
+}
+
+#logo{
+  position: relative;
+  left: 0;
+}
+
+#container{
+  background: #FFFFFF;
+  max-width: 70%;
+  min-width: 400px;
+  margin: 0 auto;
+  box-shadow: -1px 1px 20px #888888;
+}
+
+#highlights{
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+#highlights img{
+  position: relative;
+  width: 100%;
+
+  
+}
+#highlights #webelieve img{
+  position: absolute;
+  width: 40%;
+  min-width: 400px;
+  left: 0;
+  bottom: 0;
+  -webkit-border-radius: 0px 5px 0px 0px;
+  -moz-border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+#welcome{
+  width:90%;
+  color: #7A7A7A;
+  margin: 0 auto;
+  font-family:Arial, Verdanna;
+  font-size: 12pt;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.title{
+  margin: 0 4%;
+  margin-top: 90px;
+  color: #7A7A7A;
+
+  
+}
+#services{
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  min-width: 450px;
+}
+
+#services h4{
+  color: #404040;
+}
+
+#services p{
+  color: #474747;
+  margin: 3px 3px;
+  font-family:Verdanna;
+}
+
+.box2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 170px;
+  margin: 1em 1em;
+}
+
+#publications{
+  color: #303030;
+}
+
+#publications p{
+    background: transparent url(publication.png) left 6px no-repeat;
+    background-position: relative;
+    background-position-x: 3.2%; 
+
+}
+
+#date{
+
+  color: #404040;
+  margin-left: 4%;
+  font-size: 11pt;
+}
+
+
+
+#calender{
+  height: 90px;
+}
+
+#footer {
+  background: #7A7A7A;
+  margin: 0 0;
+}

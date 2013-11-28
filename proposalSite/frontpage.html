@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Lawler Financial Services</title>
+    <script src="jquery-2.0.3.min.js"></script>
+  
+  </head>
+  <body>
+    <script type="text/javascript">
+      setInterval(checkWidth, 10000)
+      function checkWidth()
+      {
+          if ( typeof counter == 'undefined' ) {
+              counter = 0;
+          }
+          counter++;
+          if(counter ==1){
+            document.getElementById("highlightImage").src="./Frontpage_1_Color.jpg";
+            $("highlightImage").css('positiong', 'relative')
+            $("highlightImage").css('wdith', '100%')
+          }
+          if(counter ==2){
+            document.getElementById("highlightImage").src="./Frontpage_2_Color.jpg";
+            $("highlightImage").css('positiong', 'relative')
+            $("highlightImage").css('wdith', '100%')
+          }
+          if(counter ==3){
+            document.getElementById("highlightImage").src="./Frontpage_4_Color.jpg";
+            $("highlightImage").css('positiong', 'relative')
+            $("highlightImage").css('wdith', '100%')
+            counter = 0;
+          }
+        
+      }
+    </script>
+    <div id="headSpace">
+      <div id="header">
+        <div id="logo">
+          <img src="logo.png">
+        </div>
+        <div id="navigation">
+          <ul>
+            <li id="people"><a href="people/index.html">People</a></li>
+            <li id="services"><a href="services.html">Services</a></li>
+            <li id="contact"><a href="contact.html">Contant us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div id="content">
+         <div id="container">
+         
+           <div id="highlights"> 
+             <img id="highlightImage" src="./Frontpage_1_Color.jpg">
+             <div id="webelieve"><img src="./Frontpage_1_Color_tagline.jpg"></div>
+           </div>
+           
+           <div id="welcome"> 
+             <p>We believe we can make a difference in your personal and financial life. 
+             As the leaders in All-of-Life Financial Care we create lifelong financial blueprints - 
+             a tailored personal investment strategy leading the way to financial security. 
+             Our All-of-Life approach, expert advisers and unique financial strategy converts confusion into knowledge, 
+             opportunity into success, and commitment into absolute trust. Give us the opportunity to sit down with you and show you how.
+             </p>
+           </div>
+           
+           <div class="title"><p><h2>Services</h2></p></div>
+           <div id="services">
+              
+               <div class=box2>
+                 <h4> Superannuation & Wealth Creation Strategies</h4>
+                 <p>Superannuation is one of the most tax-effective ways of saving for your retirement.</p>
+               </div>
+               <div class=box2>
+                 <h4> Retirement Planning</h4>
+                 <p>Having a financial plan for your retirement years is essential to help you achieve the life you want to live in retirement.</p></div>
+               <div class=box2>
+                 <h4> Investment Advice</h4>
+                 <p> The principles of investing are simple when you know the best way to reach your accumulation goals.</p>
+               </div>
+               <div class=box2>
+                 <h4> Protected Loans </h4>
+                 <p>Having a Protected Loan attached to an investment portfolio allows you to enjoy the benefits of a rising stock market without the risk of capital loss when markets fall.</p>
+               </div>
+               <div class=box2>
+                 <h4> Margin Lending </h4>
+                 <p>Margin lending, also known as 'gearing', enables you borrow money to invest in shares, managed funds, master trusts and wraps.
+               </div>
+           </div>
+           
+           <div class="title"> 
+             <p> <h2>Publications</h2> </p>
+           </div>
+           <div id="publications">
+             <p><span id="date">16 Oct 2013</span> Transfer your assets to Superannuation: SMSFs and Related Party Transfers</p>
+             <p><span id="date">28 Jun 2012</span> BT Federal Budget Update 2012</p>
+           </div>
+           
+           <div id="calender">
+           </div>
+           <div id="footer">
+             <div id="locations">
+
+               <p>Part of the lawler National Alliance</p>
+             </div>
+             <div id="sitemap">
+               <p> sitemap </p>
+             </div>
+           </div>
+         </div>
+
+       </div>
+  </body>
+</html>

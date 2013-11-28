@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	background: #C0C0C0 URL(Chris_Background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 5% 80px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: auto 80%;
+}
+
+#container{
+	background: #FFFFFF;
+	width: 70%;
+	max-width: 1200px;
+	min-width: 400px;
+	margin: 0 auto;
+	box-shadow: 2px 1px 5px #999999;
+}

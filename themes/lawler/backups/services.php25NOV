@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+	<?php Loader::element('header_required'); ?>
+	<link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
+	<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/services.css">
+
+ 
+  </head>
+  <body data-spy="scroll" data-target="#side-nav">
+	<div id="wrap">
+		<?php $this->inc('header.php'); ?>
+  </div>
+  <div id="content">
+   <div id="container">
+			<?php $b = new Area('Content'); $b->display($c); ?>
+		<div class="row">
+		  <div id="side-nav" class="col-md-2">
+				<ul class="nav list-group navex" data-spy="affix">
+					<li><a href="#retirement-planning" title="Go to the Retirement Planning page">Retirement Planning</a></li> 
+
+					<li><a href="#investment-advice" title="Go to the Investment Advice page">Investment Advice</a></li> 
+	
+					<li><a href="#superannuation-wealth-creation-strategies" title="Go to the Superannuation &amp; Wealth Creation Strategies page">Superannuation &amp; Wealth Creation Strategies</a>
+</li> 
+
+					<li><a href="#self-managed-super-funds" title="Go to the Self Managed Super Funds page">Self Managed Super Funds</a>
+</li> 
+	
+					<li><a href="#tax-effective-planning" title="Go to the Tax Effective Planning page">Tax Effective Planning</a></li> 
+	
+					<li><a href="#direct-equities" title="Go to the Direct Equities page">Direct Equities</a></li> 
+	
+					<li><a href="#protected-loans" title="Go to the Protected Loans page">Protected Loans</a></li> 
+	
+					<li><a href="#insurance" title="Go to the Insurance page">Insurance</a></li> 
+	
+	    
+					<li><a href="#estate-planning" title="Go to the Estate Planning page">Estate Planning</a></li> 
+	
+					<li><a href="#margin-lending" title="Go to the Margin Lending page">Margin Lending</a></li> 
+	
+					<li><a href="#negative-gearing" title="Go to the Negative Gearing page">Negative Gearing</a></li> 
+	
+					<li><a href="#instalment-gearing" title="Go to the Instalment Gearing page">Instalment Gearing</a></li>
+				</ul>
+			</div><!-- nav -->
+		 <div class="col-md-6" id="services">
+			<section id="test"><h1>Sup</h1>
+			</section>
+			<section id="test1"><h1>Sup</h1>
+			</section>
+					<section id="retirement-planning" title="Go to the Retirement Planning page"><h1>Retirement Planning
+</section>
+
+					<section id="investment-advice" title="Go to the Investment Advice page"><h1>Investment Advice
+</section>
+	
+					<section id="superannuation-wealth-creation-strategies" title="Go to the Superannuation &amp; Wealth Creation Strategies page"><h1>Superannuation &amp; Wealth Creation Strategies
+</section>
+
+					<section id="self-managed-super-funds" title="Go to the Self Managed Super Funds page"><h1>Self Managed Super Funds
+</section>
+	
+					<section id="tax-effective-planning" title="Go to the Tax Effective Planning page"><h1>Tax Effective Planning
+</section>
+	
+					<section id="direct-equities" title="Go to the Direct Equities page"><h1>Direct Equities</h1>
+</section>
+	
+					<section id="protected-loans" title="Go to the Protected Loans page"><h1>Protected Loans</h1>
+</section>
+	
+					<section id="insurance" title="Go to the Insurance page"><h1>Insurance</h1>
+</section>
+	
+	    
+					<section id="estate-planning" title="Go to the Estate Planning page"><h1>Estate Planning</h1>
+</section>
+	
+					<section id="margin-lending" title="Go to the Margin Lending page"><h1>Margin Lending
+</section>
+	
+					<section id="negative-gearing" title="Go to the Negative Gearing page"><h1>Negative Gearing
+</section>
+	
+					<section id="instalment-gearing" title="Go to the Instalment Gearing page"><h1>Instalment Gearing</a></li>
+		 </div><!-- services-->
+    </div><!-- row -->
+	</div><!-- content -->
+		<?php Loader::element('footer_required'); ?>
+<script src="<?=$this->getThemePath()?>/js/bootstrap.js"></script>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="../mystyle.css">
+		<link rel="stylesheet" type="text/css" href="peoples.css">
+		<script src="jquery-2.0.3.min.js"></script>
+		<script src="jquery.easing.1.3.js"></script>
+		<title>Lawler Financial Services</title>
+	</head>
+	<body>
+		<div id="headSpace">
+			<div id="header">
+				<div id="logo">
+					<a href="../frontpage.html"><img src="../logo.png"></a>
+				</div>
+				<div id="navigation">
+					<ul>
+						<li id="people"><a href="./index.html">People</a></li>
+						<li id="services"><a href="services.html">Services</a></li>
+						<li id="contact"><a href="contact.html">Contant us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+		 		<div id="container">
+					<div id="highlights"> 
+		 				<a href="Chris_Davis.html"><img src="People_Group_Photo.jpg"></a>
+		 			</div>
+		 			<div class="scrollright" style="float: right; cursor: pointer; margin-bottom: 5px; margin-right: 5px;">RIGHT</div>
+					<div class="scrollleft" style="float: left; cursor: pointer; margin-bottom: 5px; margin-right: 5px;">LEFT</div>
+		 			<script>
+						$('.scrollleft').click(function () {
+						    console.log('ok')
+						    $('#highlights').animate({
+						        scrollLeft: '-=153'
+						    }, 500, 'easeOutQuad');
+						});
+						$('.scrollright').click(function () {
+						    console.log('ok')
+						    $('#highlights').animate({
+						        scrollLeft: '+=153'
+						    }, 500, 'easeOutQuad');
+						});
+					</script>
+
+					<div id="welcome"> 
+		 				<p>With offices in Newcastle and Tamworth...
+</p>
+		 				</p>Our experienced team...</p>
+		 			</div>
+		 		</div>
+
+	 		</div>
+	</body>
+</html>
