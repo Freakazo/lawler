@@ -27,7 +27,7 @@ $navItems = $controller->getNavItems();
 		}
 	?>	
 	<li class="dropdown <?php echo $classes ?>">
-		<a href="<?php echo $realUrl?>" class="dropdown-toggle">dropdown">Services<b class="caret"></b></a>
+		<a href="<?php echo $realUrl?>" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 <li><a href="<?php echo $realUrl?>#retirement-planning" title="Go to the Retirement Planning page">Retirement Planning</a></li> 
 
@@ -67,5 +67,4 @@ $navItems = $controller->getNavItems();
 	</li>
 	
 <?php  } ?>
-	<li>wat</li>
-	<li><a href="http://linkedin.com" target="linkedin">test<img src="<?=$this->getThemePath()?>/images/linkedIn.png"></img></a></li>
+	<li><a href="http://linkedin.com" target="linkedin"><img src="<?=$this->getThemePath()?>/images/linkedIn.png" width="26" height="26"></img></a></li>
