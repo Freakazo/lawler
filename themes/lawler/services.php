@@ -16,7 +16,9 @@
   </div>
   <div id="content">
    <div id="container">
+		<div id="welcome">
 			<?php $b = new Area('Content'); $b->display($c); ?>
+		</div>
 		<div class="panel-group" id="accordion">
 		  <div class="panel panel-default">
 			<div class="panel-heading">

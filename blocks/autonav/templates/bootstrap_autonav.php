@@ -14,7 +14,7 @@ $navItems = $controller->getNavItems();
 	}
 	$classes = implode(" ", $classes);
 	?>
-	<?php if ($ni->url == "/Lawler/") {
+	<?php if ($ni->url === "/Lawler/" || $ni->url === "/~freakazo/Lawler/#nope") {
 		echo "<li class=\"". $classes ."\"> <a href=\"". $ni->url ."\"><span class=\"glyphicon glyphicon-home\"></span></a></li>";
 		continue;
 	}
