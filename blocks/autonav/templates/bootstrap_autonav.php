@@ -13,8 +13,8 @@ $navItems = $controller->getNavItems();
 		$class[] = 'active';
 	}
 	$classes = implode(" ", $classes);
-	?>
-	<?php if ($ni->url === "/Lawler/" || $ni->url === "/~freakazo/Lawler/#nope") {
+?>
+	<?php if ($ni->name === "Home" || $ni->url === "/~freakazo/Lawler/#nope") {
 		echo "<li class=\"". $classes ."\"> <a href=\"". $ni->url ."\"><span class=\"glyphicon glyphicon-home\"></span></a></li>";
 		continue;
 	}
