@@ -67,4 +67,10 @@ $navItems = $controller->getNavItems();
 	</li>
 	
 <?php  } ?>
-	<li><a href="http://linkedin.com" target="linkedin"><img src="<?=$this->getThemePath()?>/images/linkedIn.png" width="26" height="26"></img></a></li>
+<li style="height:50px;">
+	<a href="http://linkedin.com" target="linkedin" style="padding-top:13px;
+															padding-left:10px;
+															padding-right:10px;">
+		<img src="<?=$this->getThemePath()?>/images/linkedIn.png" width="26" height="26"></img>
+	</a>
+</li>
