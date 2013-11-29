@@ -63,7 +63,7 @@ $navItems = $controller->getNavItems();
 	}
 ?>
 	<li class="<?php echo $classes?>">
-		<a href="<?php echo $ni->url?>#nope" target="<?php echo $ni->target?>"><?php echo $ni->name?></a>
+		<a href="<?php echo $ni->url?>" target="<?php echo $ni->target?>"><?php echo $ni->name?></a>
 	</li>
 	
 <?php  } ?>
