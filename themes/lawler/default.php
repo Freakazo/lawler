@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
 	<link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="<?=$this->getThemePath()?>/js/respond.min.js">
 
 
 	<?php Loader::element('header_required'); ?>

@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
+	<link rel="stylesheet" href="<?=$this->getThemePath()?>/js/css3-mediaqueries.js">
 </head>
 <body>
 <div id="wrap">
