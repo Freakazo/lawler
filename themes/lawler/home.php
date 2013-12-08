@@ -82,6 +82,7 @@
 			</div><!-- tab-content -->
 
 		</div><!-- expando -->
+	<?php $this->inc('elements/footer.php'); ?>
 	</div><!-- container -->
 </div><!-- content -->
 <?php Loader::element('footer_required'); ?>
