@@ -21,13 +21,13 @@
 
 	<div class="col-md-4">
 		<div>
-			<?php $b = new Area('Sitemap'); $b->display($c); ?>
+			<?php $b = new GlobalArea('Sitemap'); $b->display($c); ?>
 		</div>
 	</div>
 	<div class="col-md-4">
-		Contact us
+			<?php $b = new GlobalArea('ContactUs'); $b->display($c); ?>
 	</div>
 	<div class="col-md-4">
-		Legals
+			<?php $b = new GlobalArea('Legals'); $b->display($c); ?>
 	</div>
 </div>

@@ -4,6 +4,18 @@
   width: 80%;
 }
 
+#intro{
+  width:90%;
+  color: #7A7A7A;
+  margin: 0 auto;
+  margin-top: 0px;
+	margin-bottom: 20px;
+  font-family: Dax, Verdana;
+  font-size: 12pt;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
 #welcome{
 	margin-top: 0;
 }
