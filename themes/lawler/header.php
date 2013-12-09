@@ -3,12 +3,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php Loader::element('header_required'); ?>
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
 <!--[if lt IE 9]>  
-	<script src="<?=$this->getThemePath()?>/js/css3-mediaqueries.js"></script>
+	<script src="<?=$this->getThemePath()?>/js/html5shiv.js"></script>
+	<script src="<?=$this->getThemePath()?>/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
