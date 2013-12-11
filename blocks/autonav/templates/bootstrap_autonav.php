@@ -27,7 +27,7 @@ $navItems = $controller->getNavItems();
 		}
 	?>	
 	<li class="dropdown <?php echo $classes ?>">
-		<a href="<?php echo $realUrl?>" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+		<a href="<?php echo $realUrl?>" class="dropdown-toggle disabled" data-toggle="dropdown">Services<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 <li><a href="<?php echo $realUrl?>#retirement-planning" title="Go to the Retirement Planning page">Retirement Planning</a></li> 
 
