@@ -7,6 +7,7 @@
 		</div>
 		<?php $this->inc('elements/footer.php'); ?>
 	</div>
+	<?php $this->inc('elements/footer.php'); ?>
 </div>
 <?php Loader::element('footer_required'); ?>
 </body>

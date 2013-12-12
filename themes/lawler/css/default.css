@@ -1,5 +1,5 @@
 * {
-  box-sizing:  border-box;
+	box-sizing:  border-box;
 }
 
 a {
@@ -7,9 +7,9 @@ a {
 }
 
 body {
-  margin: 0;
-  background-color: #EEEEEE;
-  height: 100%;
+	margin: 0;
+	background-color: #EEEEEE;
+	height: 100%;
 	font-family: Dax, Verdana;
 }
 
@@ -18,34 +18,34 @@ html {
 }
 
 #wrap #headSpace{
-  position: static;
-  height: 90px;
+	position: static;
+	height: 90px;
 }
 
 #wrap #header{
-  min-height: 90px;
-  width: 100%;
-  min-width: 400px;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  background: #FFFFFF;
-  z-index: 999;
-  box-shadow: 0px 1px 8px #461F44;
+	min-height: 90px;
+	width: 100%;
+	min-width: 400px;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	z-index: 999;
+	box-shadow: 0px 1px 8px #461F44;
 }
 
 #wrap #header img{
 }
 
 #menuContainer{
-  position: relative;
+	position: relative;
 	max-width: 70%;
 	min-width: 400px;
 	margin: 0 auto;
 }
 
 #logo{
-  position: relative;
+	position: relative;
 	max-width: 75%;
 	min-width: 400px;
 	margin: 0 auto;
@@ -59,23 +59,23 @@ html {
 
 #container{
 	position: relative;
-  background: #FFFFFF;
-  max-width: 70%;
-  min-width: 400px;
+	background: #FFFFFF;
+	max-width: 70%;
+	min-width: 400px;
 	min-height: 100%;
-  margin: 0 auto;
-  box-shadow: 0px 0px 30px #888888;
+	margin: 0 auto;
+	box-shadow: 0px 0px 30px #888888;
 }
 
 #highlights{
-  position: relative;
-  top: 0;
-  overflow: hidden;
-  max-height: 350px;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+	max-height: 350px;
 }
 
 #highlights img{
-  width: 100%;
+	width: 100%;
 }
 
 #highlights #webelieve img{
@@ -90,15 +90,15 @@ html {
 
 
 #welcome{
-  width:90%;
-  color: #7A7A7A;
-  margin: 0 auto;
-  margin-top: 30px;
+	width:90%;
+	color: #7A7A7A;
+	margin: 0 auto;
+	margin-top: 30px;
 	margin-bottom: 20px;
-  font-family: Arial, Verdana;
-  font-size: 12pt;
-  line-height: 25px;
-  letter-spacing: 1px;
+	font-family: Arial, Verdana;
+	font-size: 12pt;
+	line-height: 25px;
+	letter-spacing: 1px;
 }
 
 
@@ -108,42 +108,42 @@ html {
 }
 
 #services{
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 100%;
 }
 
 #services h4{
-  color: #404040;
+	color: #404040;
 }
 
 #services p{
-  color: #474747;
-  margin: 3px 10px;
-  font-family: Dax, verdana;
+	color: #474747;
+	margin: 3px 10px;
+	font-family: Dax, verdana;
 }
 
 #publications{
-  color: #303030;
+	color: #303030;
 }
 
 #publications p{
-    background: transparent url(/~freakazo/Lawler/themes/lawler/images/publication.png) left 8px no-repeat;
-    background-position: relative;
-    background-position-x: 3.2%; 
+	background: transparent url(/~freakazo/Lawler/themes/lawler/images/publication.png) left 8px no-repeat;
+	background-position: relative;
+	background-position-x: 3.2%; 
 }
 
 #date{
 
-  color: #404040;
-  margin-left: 4%;
-  font-size: 11pt;
+	color: #404040;
+	margin-left: 4%;
+	font-size: 11pt;
 }
 
 #footer {
 	width: 100%;
-  background: #A8A8A8;
-  margin: 120px 0;
+	background: #A8A8A8;
+	margin: 120px 0;
 	margin-bottom: 0px;
 	bottom: 0;
 	color: #505050;
