@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
-	<script src="<?=$this->getThemePath()?>/js/html5shiv.js"></script>
-	<script src="<?=$this->getThemePath()?>/js/respond.min.js"></script>
+	<script type="text/javascript" src="<?=$this->getThemePath()?>/js/html5shiv.js"></script>
+	<script type="text/javascript" src="<?=$this->getThemePath()?>/js/respond.min.js"></script>
 </head>
 <body>
 <div id="wrap">
