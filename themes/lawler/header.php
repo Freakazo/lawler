@@ -8,10 +8,8 @@
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?=$this->getThemePath()?>/css/bootstrap-theme.css">
 <link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
-<!--[if lt IE 9]>  
 	<script src="<?=$this->getThemePath()?>/js/html5shiv.js"></script>
 	<script src="<?=$this->getThemePath()?>/js/respond.min.js"></script>
-<![endif]-->
 </head>
 <body>
 <div id="wrap">
