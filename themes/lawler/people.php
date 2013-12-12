@@ -8,6 +8,7 @@
 			<?php $b = new Area('Introduction'); $b->display($c); ?>
 		</div><!-- welcome -->
 
+		<?php $this->inc('elements/footer.php'); ?>
 	</div><!-- container -->
 </div><!-- conent -->
 	<?php Loader::element('footer_required'); ?>
