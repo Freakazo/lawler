@@ -28,6 +28,7 @@ foreach( $rows as $row) {
 ?>
 		<li>
 			<img src="<?php echo $imageFile->getDownloadUrl();?>">
+			<div class="name"> <h4><?php echo $row['name'] ?> </h4></div>
 		</li>
 
 <?php
@@ -45,11 +46,11 @@ foreach( $rows as $row) {
 	</div>
 </div>
 
-<script>
-var scrollPos = 0;
+<script type="text/javascript">
+var scrollPos = -150;
 
 $("#Slide li").each(function (index) {
-	console.log(index + ": " + $(this).text());
+	console.log(index + ": " + scrollPos);
 	$(this).css({
 		"left": index * 150 - scrollPos
 	});
@@ -77,12 +78,12 @@ $("#Right").click(function () {
 });
 
 $("#Slide img").hover(function() {
-	$(this).stop(true, false).animate({ "width" : "300px"});
-	$(this).parent().stop(true, false).animate({"left" : ($(this).parent().index() * 150 - scrollPos - 25) + "px"});
+	$(this).stop(true, false).animate({ "width" : "150px", "left" : "-25px"});
+	$(this).parent().find('name').stop(true, false).animate({"left" : "-25px"});
 
 }, function() {
-	$(this).stop(true, false).animate({ "width" : "250px"});
-	$(this).parent().stop(true, false).animate({"left" : ($(this).parent().index() * 150 - scrollPos) + "px"});
+	$(this).stop(true, false).animate({ "width" : "100px", "left" : "0px"});
+	$(this).parent().find('name').stop(true, false).animate({"left" : "0px"});
 });
 
 $("#Slide #Left").hover(function(){
