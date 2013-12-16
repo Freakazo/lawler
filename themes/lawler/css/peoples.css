@@ -30,6 +30,7 @@
 	top: 370px;
 	left: -25px;
 	width: 150px;
+	z-index: 3;
 }
 
 #Slide .name:hover {
@@ -44,9 +45,22 @@
 		max-width: 70px;
 		height: 100%;
 		opacity: 0.5;
+		z-index: 2;
 }
 
-#Slide .glyphicon{
+#Slide #Right {
+		position: absolute;
+		background-color: #000000;
+		width: 10%;
+		min-width: 50px;
+		max-width: 70px;
+		height: 100%;
+		opacity: 0.5;
+		right: 0;
+		z-index: 2;
+}
+
+#Slide .glyphicon {
 		position: absolute;
 		text-align: center;
 		top: 45%;
@@ -60,14 +74,15 @@
 		line-height: 1.33;
 }
 
-#Slide #Right {
-		position: absolute;
-		background-color: #000000;
-		width: 10%;
-		min-width: 50px;
-		max-width: 70px;
-		height: 100%;
-		opacity: 0.5;
-		right: 0;
-}
+
+
+#Slide #Bottom {
+	position: absolute;
+	background: #aaa;
+	height: 5%;
+	width: 100%;
+	bottom: 0;
+	z-index: 1;
+	box-shadow: 0px -5px 5px #aaa;
 	
+}

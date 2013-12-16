@@ -19,9 +19,9 @@
 				}?>
 			</div><!-- cycle slideshow -->
 
-			<div id="webelieve">
+<!-- 			<div id="webelieve">
 				<img src="<?=$this->getThemePath()?>/images/frontpage/Frontpage_1_Color_tagline.jpg">
-			</div>
+			</div> -->
 		</div><!-- highlights -->
 
 		<div id="welcome"> 
