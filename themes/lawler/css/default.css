@@ -31,7 +31,10 @@ html {
 	padding: 0;
 	background: #FFFFFF;
 	z-index: 999;
-	box-shadow: 0px 1px 8px #461F44;
+	border-bottom-style: solid;
+	border-bottom-color: #461F44;
+	border-bottom-width: thin;
+	box-shadow: 0px 0px 3px #461F44;
 }
 
 #wrap #header img{
