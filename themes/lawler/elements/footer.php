@@ -31,3 +31,20 @@
 			<?php $b = new GlobalArea('Legals'); $b->display($c); ?>
 	</div>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var anchor = window.location.hash.replace("#", "");
+    $("#" + anchor).collapse('show');
+
+    function goToByScroll(id){
+        $('html,body').animate({scrollTop: $("#"+id).offset().top - 130},'slow');
+	}
+
+	setTimeout(function(){
+	      goToByScroll(anchor);
+	},1000);
+});
+
+
+</script>

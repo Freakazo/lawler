@@ -23,7 +23,10 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		<div class="title">
 			<h4>
 				<?php  echo $title; ?></a>
-			</h4>
+			</h4>		
+		</div>
+		<div class="date">
+			<p><i> Published on <?php echo $date ?> </i></p>
 		</div>
 		<div class="excerpt">
 			<?php 

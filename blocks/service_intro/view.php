@@ -4,18 +4,17 @@
 <div class=row>
 	<div class="col-md-6">
 
-<?php  if (!empty($field_2_wysiwyg_content)): ?>
-	<?php  echo $field_2_wysiwyg_content; ?>
-<?php  endif; ?>
+		<?php  if (!empty($field_2_wysiwyg_content)): ?>
+		<?php  echo $field_2_wysiwyg_content; ?>
+		<?php  endif; ?>
+	</div>
+	<div class="col-md-6">
 
-						</div>
-						<div class="col-md-6">
-
-<?php  if (!empty($field_4_wysiwyg_content)): ?>
+	<?php  if (!empty($field_4_wysiwyg_content)): ?>
 	<?php  echo $field_4_wysiwyg_content; ?>
-<?php  endif; ?>
+	<?php  endif; ?>
 
-						</div>
-					</div>
+	</div>
+</div>
 
 

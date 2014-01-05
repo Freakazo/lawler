@@ -141,9 +141,8 @@ html {
 }
 
 #publications p{
-	background: transparent url(/~freakazo/Lawler/themes/lawler/images/publication.png) left 8px no-repeat;
-	background-position: relative;
-	background-position-x: 3.2%; 
+	margin: 3px 10px;
+	font-family: Dax, verdana;
 }
 
 #date{
@@ -187,4 +186,23 @@ html {
 
 #footer  .nav  li  a:hover {
 	background-color: #919191
+}
+
+#intro{
+  width:90%;
+  color: #7A7A7A;
+  margin: 0 auto;
+  margin-top: 0px;
+	margin-bottom: 20px;
+  font-family: Dax, Verdana;
+  font-size: 12pt;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.no-pad .col-md-9 {
+	padding-left: 0;
+}
+.no-pad .col-md-3 {
+	padding-right: 10px;
 }

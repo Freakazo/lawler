@@ -6,7 +6,7 @@
 <h4 class="panel-title">
 
 <?php  if (!empty($field_2_textbox_text)): ?>
-	<a href="#<?php  echo htmlentities($field_2_textbox_text, ENT_QUOTES, APP_CHARSET); ?>" data-toggle="collapse" data-parent="#accordion" class="collapsed">
+	<a href="#<?php  echo htmlentities($field_2_textbox_text, ENT_QUOTES, APP_CHARSET); ?>" data-toggle="collapse" data-parent="#accordion">
 <?php  endif; ?>
 
 <?php  if (!empty($field_3_textbox_text)): ?>
@@ -30,7 +30,6 @@
 
 <?php  if ($field_8_select_value == 1): ?>
 	<!-- ENTER MARKUP HERE FOR FIELD "Embedded content area?" : CHOICE "Add content area inside block?" -->
-	<?php $b = new Area('Introduction'); $b->display($c); ?>
 <?php  endif; ?>
 
 <?php  if ($field_8_select_value == 2): ?>

@@ -36,8 +36,7 @@
 			<div class="tab-content" id="my-tab-content">
 				<div class="tab-pane fade in" id="news">            
 					<div id="publications">
-						<p><span id="date">16 Oct 2013</span> Transfer your assets to Superannuation: SMSFs and Related Party Transfers</p>
-						<p><span id="date">28 Jun 2012</span> BT Federal Budget Update 2012</p>
+						<?php $b = new Area('news'); $b->display($c); ?>
 					</div>
 				</div>
 
