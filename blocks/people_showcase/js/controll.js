@@ -3,7 +3,6 @@ $(document).ready(function() {
 
 
 	$("#Slide li").each(function (index) {
-		console.log(index + ": " + scrollPos);
 		$(this).css({
 			"left": index * 150 - scrollPos
 		});
@@ -18,7 +17,6 @@ $(document).ready(function() {
 	$("#Left").click(function () {
 		scrollPos -= 150;
 		$("#Slide li").each(function (index) {
-			console.log(scrollPos);
 			$(this).animate({
 				"left": index * 150 - scrollPos
 			}, 650);
@@ -28,7 +26,6 @@ $(document).ready(function() {
 	$("#Right").click(function () {
 		scrollPos += 150;
 		$("#Slide li").each(function (index) {
-			console.log(scrollPos);
 			$(this).animate({
 				"left": index * 150 - scrollPos
 			}, 650);
