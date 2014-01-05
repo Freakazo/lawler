@@ -21,13 +21,17 @@ $(document).ready(function() {
     var anchor = window.location.hash.replace("#", "");
     $("#" + anchor).collapse('show');
 
-    function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("#"+id).offset().top - 130},'slow');
-	}
+    if(anchor !== "")
+    {
+	    function goToByScroll(id){
+	        $('html,body').animate({scrollTop: $("#"+id).offset().top - 130},'slow');
+		}
 
-	setTimeout(function(){
-	      goToByScroll(anchor);
-	},1000);
+		setTimeout(function(){
+		      goToByScroll(anchor);
+		},1000);    	
+    }
+
 });
 
 
