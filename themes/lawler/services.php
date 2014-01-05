@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/services.css">
 <?php $this->inc('header.php'); ?>
+<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/services.css">
 <div id="content">
 	<div id="container">
 		<div id="intro">
