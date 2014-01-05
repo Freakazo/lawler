@@ -21,13 +21,8 @@ defined('C5_EXECUTE') or die("Access Denied.");
 	?>
 	<div class="entry <?php  echo $firstClass; ?>">
 		<div class="title">
-			<h3>
-				<a href="<?php  echo $link; ?>"><?php  echo $title; ?></a>
-			</h3>
 			<h4>
-				<?php  
-				echo t('Posted by %s on %s',$author,$date);
-				?>
+				<?php  echo $title; ?></a>
 			</h4>
 		</div>
 		<div class="excerpt">
