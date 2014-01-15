@@ -1,12 +1,9 @@
 <?php $this->inc('header.php'); ?>
+<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/Chris.css">
 <div id="content">
 	<div id="container">
 		<div id="highlights"> 
-			<video width="100%" controls poster="<?=$this->getThemePath()?>/images/Chris_Video_Image.png">
-				<source src="<?=$this->getThemePath()?>/videos/Chris_Video.mov" type="video/mp4">
-					<source src="<?=$this->getThemePath()?>/videos/Chris_Video.ogg" type="video/ogg">
-						Your browser does not support the video tag.
-					</video>
+			<?php $a = new Area('Highlight'); $a->display($c); ?>
 		</div>
 
 		<div id="welcome"> 

@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	var scrollPos = -150;
+	var scrollPos = -50;
 
 
 	$("#Slide li").each(function (index) {
 		$(this).css({
-			"left": index * 150 - scrollPos
+			"left": index * 130 - scrollPos
 		});
 	});
 
@@ -15,19 +15,19 @@ $(document).ready(function() {
 	});
 
 	$("#Left").click(function () {
-		scrollPos -= 150;
+		scrollPos -= 260;
 		$("#Slide li").each(function (index) {
 			$(this).animate({
-				"left": index * 150 - scrollPos
+				"left": index * 130 - scrollPos
 			}, 650);
 		});
 	});
 
 	$("#Right").click(function () {
-		scrollPos += 150;
+		scrollPos += 260;
 		$("#Slide li").each(function (index) {
 			$(this).animate({
-				"left": index * 150 - scrollPos
+				"left": index * 130 - scrollPos
 			}, 650);
 		});
 	});

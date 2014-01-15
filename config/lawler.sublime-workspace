@@ -1,0 +1,243 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pt",
+				"pt_conns	variable"
+			],
+			[
+				"pt_",
+				"pt_conn	struct"
+			],
+			[
+				"po",
+				"pont_2	variable"
+			],
+			[
+				"c",
+				"cur_point	variable"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"font",
+				"font-variant"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/D/D.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/freakazo/Home/Programming/Lawler/backups/V2_LFS_Photos_with_taglines10.jpg",
+		"/home/freakazo/Home/Programming/Lawler/config/site.php",
+		"/home/freakazo/Home/Programming/AGE/src/Elem_Fuse.d",
+		"/home/freakazo/Home/Programming/AGE/src/Point.d",
+		"/home/freakazo/.config/sublime-text-3/Packages/DKit/DKit.sublime-settings",
+		"/home/freakazo/.config/sublime-text-3/Packages/User/DKit.sublime-settings",
+		"/home/freakazo/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/freakazo/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/freakazo/Home/Programming/Lawler/themes/lawler/css/default.css",
+		"/home/freakazo/Home/Programming/Lawler/themes/lawler/default.php",
+		"/home/freakazo/Home/Programming/Lawler/themes/lawler/person.php",
+		"/home/freakazo/Home/Programming/Lawler/themes/lawler/people.php",
+		"/home/freakazo/Home/Programming/Lawler/themes/lawler/services.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"Elem_fuse.d",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"build",
+			"point",
+			"popover",
+			"hover"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"pt"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"project": "lawler.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 52.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
