@@ -36,7 +36,9 @@
 					<?php $b = new Area('mapThre'); $b->display($c); ?>
 				</div>
 			</div>
-			<?php $b = new Area('contactForm'); $b->display($c); ?>
+			<div id="welcome"> 
+				<?php $b = new Area('contactForm'); $b->display($c); ?>
+			</div>
 			<?php $this->inc('elements/footer.php'); ?>
 		</div>
 	</div>
