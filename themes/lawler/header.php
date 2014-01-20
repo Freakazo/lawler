@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=$this->getThemePath()?>/css/default.css">
 	<script type="text/javascript" src="<?=$this->getThemePath()?>/js/html5shiv.js"></script>
 	<script type="text/javascript" src="<?=$this->getThemePath()?>/js/respond.min.js"></script>
+
 </head>
 <body>
 	<div id="wrap">

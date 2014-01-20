@@ -2,6 +2,16 @@
 	box-sizing:  border-box;
 }
 
+@font-face {
+	font-family: 'dax';
+	src: url('../fonts/dax-regular.eot');
+	src: url('../fonts/dax-regular.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/dax-regular.woff') format('woff'), 
+	url('../fonts/dax-regular.ttf') format('truetype'), 
+	url('../fonts/dax-regular.svg') format('svg');
+	font-weight: 300;
+}
+
 a {
 	color: #F030F0;
 }
@@ -205,3 +215,4 @@ html {
 .no-pad .col-md-3 {
 	padding-right: 10px;
 }
+
