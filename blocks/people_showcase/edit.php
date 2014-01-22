@@ -14,50 +14,62 @@
 $db = Loader::db();
 $results = $db->query('SELECT * FROM btPersons');
 $rows = $results->GetArray();
+usort($rows, function ($item1, $item2){
+	return $item1['display_order'] - $item2['display_order'];
+});
+$orderNums = array();
+for($i = 1; $i < count($rows) + 1; ++$i) {
+	$orderNums[$i] = $i;
+}
 foreach ($rows as $row) {
 
 		$currID = $row['pID'];
 	?>
-		<div class="clearfix">
-		<?php
-			echo $form->label('person-' . $currID, t('Name'));
-			echo $form->text('person-' . $currID, $row['name']);
-		?>
-		</div>
+		<div class="ccm-block-field-group">
 
-		<div class="clearfix">
-		<?php
-			echo $form->label('intro-' . $currID, t('Intro'));
-			echo $form->text('intro-' . $currID, $row['intro']);
-		?>
-		</div>
+			<h3> Name: </h3>
+			<?php
+				echo $form->text('person-' . $currID, $row['name']);
+			?>
 
-		<div class="clearfix">
-		<?php
-			echo $form->label('image-' . $currID, t('Image'));
-			echo $form->text('image-' . $currID, $row['image']);
-		?>
-		</div>
+			<h3> Introduction: </h3>
+			<?php
+				echo $form->text('intro-' . $currID, $row['intro'], array('style' => 'width: 100%'));
+			?>
 
-		<div class="clearfix">
-		<?php
-			echo $form->label('link-' . $currID, t('Link'));
-			echo $form->text('link-' . $currID, $row['link']);
-		?>
+			<h3> Image file name: </h3>
+			<?php
+				echo $form->text('image-' . $currID, $row['image']);
+			?>
+
+			<h3> URL: </h3>
+			<?php
+				echo $form->text('link-' . $currID, $row['link']);
+			?>
+
+			<h3> Order: </h3>
+			<?php
+				echo $form->select('display_order-' . $currID, $orderNums, $row['display_order']);
+			?>
+
+			<h3> Flip image horizontally?: </h3>
+			<?php
+				echo $form->checkBox('flip-' . $currID, 'flip', $row["hor_flip"]);
+			?>
+
+
+			<h3> Delete person? </h3>
+			<?php
+				echo $form->checkBox('delete-' . $currID, 'delete', 0);
+			?>
+
 		</div>
-		<div class="clearfix">
-		<?php
-			echo $form->label('delete-' . $currID, t('Delete: '));
-			echo $form->checkBox('delete-' . $currID, 'delete', 0);
-		?>
-		</div>
-		<hr>
 <?php
 }
 
 #Find a new unique ID
 $found = false;
-$currID = 4;
+$currID = 1;
 while(!$found) {
 		$found = true;
 		foreach($rows as $row){
@@ -71,33 +83,36 @@ while(!$found) {
 		$currID++;
 }
 ?>
-<div class="clearfix">
-<?php
-	echo $form->label('person-' . $currID, t('Name'));
-	echo $form->text('person-' . $currID);
-?>
-</div>
+<div class="ccm-block-field-group">
+	<h2> Add new person: </h3>
+	<div class="clearfix">
 
+	<h3> Name: </h3>
+	<?php
+		echo $form->text('person-' . $currID);
+	?>
+	</div>
 
-<div class="clearfix">
-<?php
-	echo $form->label('intro-' . $currID, t('Intro'));
-	echo $form->text('intro-' . $currID);
-?>
-</div>
+	<div class="clearfix">
+	<h3> Introduction: </h3>
+	<?php
+		echo $form->text('intro-' . $currID);
+	?>
+	</div>
 
-<div class="clearfix">
-<?php
-	echo $form->label('image-' . $currID, t('Image'));
-	echo $form->text('image-' . $currID);
-?>
-</div>
+	<div class="clearfix">
+	<h3> Image file name: </h3>
+	<?php
+		echo $form->text('image-' . $currID);
+	?>
+	</div>
 
-<div class="clearfix">
-<?php
-	echo $form->label('link-' . $currID, t('Link'));
-	echo $form->text('link-' . $currID);
-?>
+	<div class="clearfix">
+	<h3> URL: </h3>
+	<?php
+		echo $form->text('link-' . $currID);
+	?>
+	</div>
 </div>
 
 

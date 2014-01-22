@@ -8,6 +8,10 @@
 		$results = $db->query('SELECT * from btPersons');
 		$rows = $results->GetArray();
 
+		usort($rows, function ($item1, $item2){
+			return $item1['display_order'] - $item2['display_order'];
+		});
+
 #Get all the files in the people fileset
 		Loader::model("file_list");
 		Loader::model("file_set");
@@ -31,7 +35,7 @@
 
 				<li>
 					<a id="pop" href="<?php echo $row['link'];?>" data-toggle="popover" data-content="<?php echo $row['intro'] ?>" data-title="<?php echo $row['name'] ?>" > 
-						<img src="<?php echo $imageFile->getDownloadUrl();?>">
+						<img src="<?php echo $imageFile->getDownloadUrl();?>" <?php if($row['hor_flip'] == 1) echo "class=\"flip-horizontal\""?> >
 					</a>
 					<div class="name"> <h4><?php echo $row['name'] ?> </h4></div>
 

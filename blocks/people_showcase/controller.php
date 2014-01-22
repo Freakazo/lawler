@@ -40,16 +40,19 @@ class PeopleShowcaseBlockController extends BlockController {
 			}
 		}
 
-
-
 		Log::addEntry(implode("','",$args));
 		foreach($persons as $pID) {
 			if(empty($args["person-".$pID]) || (in_array($pID, $deleted))) {
 				continue;
 			}
-			$query = "insert into btPersons (pID, name, intro, image, link) values (?, ?, ?, ?, ?) on duplicate key update name=values(name), intro=values(intro), image=values(image), link=values(link)";
-			$values = array($pID, $args["person-".$pID], $args["intro-".$pID], $args["image-".$pID], $args["link-".$pID]);
-			Log::addEntry('Saving data');
+
+			$flip = 0;
+			if($args["flip-".$pID] === "flip") {
+				$flip = 1;
+			}
+
+			$query = "insert into btPersons (pID, name, intro, image, link, display_order, hor_flip) values (?, ?, ?, ?, ?, ?, ?) on duplicate key update name=values(name), intro=values(intro), image=values(image), link=values(link), display_order=values(display_order), hor_flip=values(hor_flip)";
+			$values = array($pID, $args["person-".$pID], $args["intro-".$pID], $args["image-".$pID], $args["link-".$pID], $args["display_order-".$pID], $flip);
 			$db->Execute($query, $values);
 		}
 	}

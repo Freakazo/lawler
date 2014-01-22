@@ -21,5 +21,8 @@
 	</field>
 	<field name="image" type="C" size="255" />
 	<field name="link" type="C" size="255"/>
+	<field name="display_order" type="I"/>
+	<field name="hor_flip" type="I"/>
+
   </table>
 </schema>

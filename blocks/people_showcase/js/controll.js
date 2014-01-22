@@ -1,11 +1,29 @@
-$(document).ready(function() {
-	var scrollPos = -50;
+window.onload = (function() {
+	var scrollPos = 150;
+	var offset = 0;
 
+	function getImageWidth(image){
+		var ratio = image.width() / image.height();
+		var width = ratio*365;
+		return width;
+	}
 
+	//Initialize all the elements with on the showcase
 	$("#Slide li").each(function (index) {
+
+		$(this).attr('sofset', offset);
+
+		//Initialize element position on showcase
 		$(this).css({
-			"left": index * 130 - scrollPos
+			"left": (offset - scrollPos) + "px"
 		});
+
+		//Calculate image width instead of default 100px for images that need to be wider than 100px
+		var width = getImageWidth($(this));
+		$(this).find("img").css({ "width": width + "px"})
+
+		//offset for next element to use		
+		offset += width + 20; //width + x where x is space between elements
 	});
 
 	$('[data-toggle="popover"]').popover({
@@ -15,29 +33,30 @@ $(document).ready(function() {
 	});
 
 	$("#Left").click(function () {
-		scrollPos -= 260;
+		
+		scrollPos -= 250;
 		$("#Slide li").each(function (index) {
 			$(this).animate({
-				"left": index * 130 - scrollPos
-			}, 650);
+				"left": [$(this).attr('sofset') - scrollPos, "easeOutQuad"]
+			}, 750);
 		});
 	});
 
 	$("#Right").click(function () {
-		scrollPos += 260;
+		scrollPos += 250;
 		$("#Slide li").each(function (index) {
 			$(this).animate({
-				"left": index * 130 - scrollPos
-			}, 650);
+				"left": [$(this).attr('sofset') - scrollPos, "easeOutQuad"]
+			}, 750);
 		});
 	});
 
 	$("#Slide img").hover(function() {
-		$(this).stop(true, false).animate({ "width" : "150px", "left" : "-25px"});
+		$(this).stop(true, false).animate({ "width" : (getImageWidth($(this)) + 50) + "px", "left" : "-25px"});
 		$(this).parent().find('name').stop(true, false).animate({"left" : "-25px"});
 
 	}, function() {
-		$(this).stop(true, false).animate({ "width" : "100px", "left" : "0px"});
+		$(this).stop(true, false).animate({ "width" : getImageWidth($(this)) + "px", "left" : "0px"});
 		$(this).parent().find('name').stop(true, false).animate({"left" : "0px"});
 	});
 
