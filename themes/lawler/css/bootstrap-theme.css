@@ -262,6 +262,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 	top: 25px;
 }
 
+@media (max-width: 770px){
+  .navbar-default {
+    top: 0px;
+  }
+
+}
+
 .navbar-default .navbar-nav > .active > a {
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#ebebeb), to(#f3f3f3));
   background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
