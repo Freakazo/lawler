@@ -7,3 +7,6 @@ files/tmp/*
 proposalSite/*
 
 *.sublime-workspace
+
+!*files/backups/*
+
