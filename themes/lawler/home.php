@@ -58,6 +58,13 @@ $("#tabs a").click(function (e) {
 	e.preventDefault();
 	$(this).tab("show");
 });
+
+$( document ).ready(function (){
+	var width = $(window).width() * 0.7;
+	var maxHeight = width*0.4185;
+	$( "#highlights").css("max-height", maxHeight+"px");
+});
+
 </script>
 </div>
 </div>
