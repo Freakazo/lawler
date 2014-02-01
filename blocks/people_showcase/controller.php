@@ -19,6 +19,12 @@ class PeopleShowcaseBlockController extends BlockController {
 		parent::save($args);
 	}
 
+	public function on_page_view() {
+		$html = Loader::helper('html');
+		$this->addHeaderItem($html->javascript('jquery.ui.js'));
+		$this->addHeaderItem($html->css('jquery.ui.css'));
+	}
+
 	public function savePersons($args) {
 		$db = Loader::db();
 
