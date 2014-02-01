@@ -8,5 +8,5 @@ proposalSite/*
 
 *.sublime-workspace
 
-!*files/backups/*
+!files/backups
 
