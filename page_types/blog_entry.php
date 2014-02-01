@@ -22,6 +22,7 @@
 		<div class="pageSection">
 			<?php  $a = new Area('Blog Post More'); $a->display($c); ?>
 		</div>
+		<br><br><hr>
 		<div class="pageSection">
 			<?php  $ai = new Area('Blog Post Footer'); $ai->display($c); ?>
 		</div>
