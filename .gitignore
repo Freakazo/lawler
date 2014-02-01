@@ -5,3 +5,5 @@ files/tmp/*
 *_Video.*
 *.swp
 proposalSite/*
+
+*.sublime-workspace
