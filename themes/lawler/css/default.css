@@ -58,7 +58,8 @@ html {
 	font-size: 14px;
 }
 
-#wrap #header img{
+#wrap #header #logo img{
+	width: 200px;
 }
 
 @media all and (min-width: 951px){
@@ -71,10 +72,7 @@ html {
 
 	#logo{
 		position: relative;
-		max-width: 75%;
-		min-width: 400px;
-		margin: 0 auto;
-		top: 10px;
+		top: 5px;
 	}
 }
 @media all and (max-width: 950px){
@@ -200,6 +198,7 @@ html {
 	margin: 120px 0;
 	margin-bottom: 0px;
 	bottom: 0;
+	font-size: 8pt;
 	color: #505050;
 }
 
