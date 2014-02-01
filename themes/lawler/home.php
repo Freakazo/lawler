@@ -34,7 +34,8 @@
 				<li><a data-toggle="tab" href="#news" >News</a></li>
 			</ul>
 			<div class="tab-content" id="my-tab-content">
-				<div class="tab-pane fade in" id="news">            
+				<div class="tab-pane fade in" id="news">
+					<br>        
 					<div id="publications">
 						<?php $b = new Area('news'); $b->display($c); ?>
 					</div>
