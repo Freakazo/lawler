@@ -58,7 +58,7 @@ $navItems = $controller->getNavItems();
 	
 <?php  } ?>
 <li style="height:50px;">
-	<a href="http://www.linkedin.com/company/lfs-tamworth?trk=top_nav_home" target="linkedin" style="padding-top:13px;
+	<a href="http://www.linkedin.com/company/2983812" target="linkedin" style="padding-top:13px;
 															padding-left:10px;
 															padding-right:10px;">
 		<img src="<?=$this->getThemePath()?>/images/linkedIn.png" width="26" height="26"></img>
