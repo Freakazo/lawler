@@ -12,6 +12,16 @@
 	font-weight: 300;
 }
 
+@font-face {
+	font-family: 'dax';
+	src: url('../fonts/dax-bold-webfont.eot');
+	src: url('../fonts/dax-bold-webfont.eot?') format('embedded-opentype'), 
+	url('../fonts/dax-bold-webfont.woff') format('woff'), 
+	url('../fonts/dax-bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 a {
 	color: #800080;
 }
