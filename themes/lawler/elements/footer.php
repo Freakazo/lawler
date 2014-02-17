@@ -31,4 +31,7 @@
 			<?php $b = new GlobalArea('Legals'); $b->display($c); ?>
 	</div>
 </div>
-
+	<?php Loader::element('footer_required'); ?>
+	<!-- include Cycle plugin -->
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	<script src="<?=$this->getThemePath()?>/js/bootstrap.js"></script>

@@ -33,17 +33,27 @@ window.onload = (function() {
 	});
 
 	$("#Left").click(function () {
-		
-		scrollPos -= 250;
-		$("#Slide li").each(function (index) {
-			$(this).animate({
-				"left": [$(this).attr('sofset') - scrollPos, "easeOutQuad"]
-			}, 750);
-		});
+		if(scrollPos > -100)
+		{
+			scrollPos -= 250;
+			$("#Slide li").each(function (index) {
+				$(this).animate({
+					"left": [$(this).attr('sofset') - scrollPos, "easeOutQuad"]
+				}, 750);
+			});
+		}
+		if (scrollPos -50 < -100){
+			$("#Slide #Left .glyphicon").css("color", "grey");
+		}
 	});
 
 	$("#Right").click(function () {
+
+		console.log(scrollPos);
 		scrollPos += 250;
+				if(scrollPos > -100){
+			$("#Slide #Left .glyphicon").css("color", "white");
+		}
 		$("#Slide li").each(function (index) {
 			$(this).animate({
 				"left": [$(this).attr('sofset') - scrollPos, "easeOutQuad"]
@@ -61,14 +71,14 @@ window.onload = (function() {
 	});
 
 	$("#Slide #Left").hover(function(){
-		$("#Slide #Left .glyphicon").stop(true, false).animate({ "font-size" : "28px", "top" : "44%" });
+		$("#Slide #Left .glyphicon").stop(true, false).animate({ "font-size" : "28px", "top" : "44.5%" });
 	}, function() {
 		$("#Slide #Left .glyphicon").stop(true, false).animate({ "font-size" : "24px", "top": "45%"});
 	});
 
 	$("#Slide #Right").hover(function(){
-		$("#Slide #Right .glyphicon").stop(true, false).animate({ "font-size" : "28px" });
+		$("#Slide #Right .glyphicon").stop(true, false).animate({ "font-size" : "28px", "top" : "44.5%" });
 	}, function() {
-		$("#Slide #Right .glyphicon").stop(true, false).animate({ "font-size" : "24px" });
+		$("#Slide #Right .glyphicon").stop(true, false).animate({ "font-size" : "24px", "top": "45%" });
 	});
 });

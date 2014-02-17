@@ -55,7 +55,6 @@ html {
 #wrap #header{
 	min-height: 90px;
 	width: 100%;
-	min-width: 400px;
 	position: fixed;
 	margin: 0;
 	padding: 0;
@@ -251,10 +250,19 @@ html {
   letter-spacing: 1px;
 }
 
-.no-pad .col-md-9 {
-	padding-left: 0;
-}
 .no-pad .col-md-3 {
 	padding-right: 10px;
 }
 
+.navbar-default {
+	top: 25px;
+}
+
+
+@media all and (max-width: 560px){
+	#wrap #header #logo img {
+		width: 140px;
+		position: absolute;
+		top: 8px;
+	}
+}
