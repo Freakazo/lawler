@@ -10,8 +10,6 @@
 		</div><!-- row -->
 		<?php $this->inc('elements/footer.php'); ?>
 	</div><!-- content -->
-	<?php Loader::element('footer_required'); ?>
-	<script src="<?=$this->getThemePath()?>/js/bootstrap.js"></script>
 </div>
 
 <script type="text/javascript">

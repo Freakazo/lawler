@@ -12,12 +12,6 @@
 		<?php $this->inc('elements/footer.php'); ?>
 	</div><!-- container -->
 </div><!-- content -->
-
-
-<?php Loader::element('footer_required'); ?>
-<!-- include Cycle plugin -->
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-<script src="<?=$this->getThemePath()?>/js/bootstrap.js"></script>
 <script>
 	$("#tabs a").click(function (e) {
 		e.preventDefault();
