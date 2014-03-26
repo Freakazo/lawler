@@ -9,20 +9,6 @@ window.onload = (function() {
 	}
 
 
-	$.fn.pngFix = function() {
-	  if (!$.browser.msie || $.browser.version >= 9) { return $(this); }
-
-	  return $(this).each(function() {
-	    var img = $(this),
-	        src = img.attr('src');
-
-	    img.attr('src', '/images/general/transparent.gif')
-	        .css('filter', "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='" + src + "')");
-	  });
-	};
-
-	$('#Slide img').pngFix();
-
 
 
 	//Initialize all the elements with on the showcase

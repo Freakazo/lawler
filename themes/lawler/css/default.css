@@ -39,7 +39,7 @@ body {
 	margin: 0;
 	background: url(../images/content_bg.png);
 	height: 100%;
-	font-family: Dax, Verdana, 'Lucida Sans Unicode', 'Lucida Grande', Garuda, sans-serif;
+	font-family: Arial ,sans-serif, Dax, Verdana, 'Lucida Sans Unicode', 'Lucida Grande', Garuda;
 	font-size: 12px;
 }
 
@@ -204,7 +204,7 @@ html {
 #footer {
 	width: 100%;
 	background: #A8A8A8;
-	margin: 120px 0;
+	margin: 70px 0;
 	margin-bottom: 0px;
 	bottom: 0;
 	font-size: 8pt;
