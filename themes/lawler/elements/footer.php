@@ -35,3 +35,17 @@
 	<!-- include Cycle plugin -->
 	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 	<script src="<?=$this->getThemePath()?>/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+$.fn.pngFix = function() {
+  if (!$.browser.msie || $.browser.version >= 9) { return $(this); }
+
+  return $(this).each(function() {
+    var img = $(this),
+        src = img.attr('src');
+
+    img.attr('src', '/images/general/transparent.gif')
+        .css('filter', "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='crop',src='" + src + "')");
+  });
+};
+</script>
